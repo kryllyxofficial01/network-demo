@@ -29,7 +29,7 @@ SOCKET client_connect(const int port) {
 }
 
 void client_send(SOCKET client_socket, const char* data) {
-    printf("Data to be sent: \e[33m%s\e[0m\n", data);
+    printf("Data to be sent: \e[36m%s\e[0m\n", data);
     printf("Sending data to server ... ");
 
     if (send(client_socket, data, strlen(data) + 1, 0) == SOCKET_ERROR) {
